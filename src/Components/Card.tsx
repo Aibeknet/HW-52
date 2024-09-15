@@ -5,8 +5,6 @@ interface ICardProps {
     suit: string;
 }
 
-
-
 const Card: React.FC<ICardProps> = ({ rank, suit}) => {
     const suitsObj: { [key: string]: string } = {
         diams: '♦',
