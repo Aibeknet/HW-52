@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ICardProps {
+export interface ICardProps {
     rank: string;
     suit: string;
 }

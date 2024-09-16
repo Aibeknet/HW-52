@@ -6,7 +6,7 @@ class CardDeck {
     constructor() {
         this.deck = [];
         const ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
-        const suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades'];
+        const suits = ['hearts', 'diams', 'clubs', 'spades'];
 
         for (const suit of suits) {
             for (const rank of ranks) {
@@ -20,7 +20,6 @@ class CardDeck {
             throw new Error('No deck found');
         }
         const randomIndex = Math.floor(Math.random() * this.deck.length);
-
         return this.deck.splice(randomIndex, 1)[0];
     }
 
